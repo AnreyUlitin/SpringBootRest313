@@ -358,13 +358,6 @@ function newUser() {
                 '<td> <button type="button" onclick="modalDelete(' + user.id + ')" class="btn btn-danger">Delete</button> </td>' +
                 '</tr>');
 
-            // window.formNewUser.newFirstName.value = "";
-            // window.formNewUser.newLastName.value = "";
-            // window.formNewUser.newAge.value = "";
-            // window.formNewUser.newUsername.value = "";
-            // window.formNewUser.newPassword.value = "";
-            // window.formNewUser.newRoles.value = "";
-
             $('#NewUserCreated').modal();
         });
 }

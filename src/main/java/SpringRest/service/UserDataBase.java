@@ -9,18 +9,18 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Component
-public class UserTestData {
+public class UserDataBase {
 
     private final RoleService roleService;
     private final UserService userService;
 
-    public UserTestData(RoleService roleService, UserService userService) {
+    public UserDataBase(RoleService roleService, UserService userService) {
         this.roleService = roleService;
         this.userService = userService;
     }
 
     @PostConstruct
-    public void loadTestUser() {
+    public void loadUserDataBase() {
         Set<Role> allRoles = new HashSet<>();
         allRoles.add(new Role("ROLE_ADMIN"));
         allRoles.add(new Role("ROLE_USER"));
